@@ -1,0 +1,73 @@
+//清除浮動
+@mixin clearFix {
+    clear: both;
+}
+
+// 隱藏文字
+@mixin hide-text {
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+// 置中-絕對定位
+// 記得要先設定相對定位
+
+@mixin allcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+// 垂直
+@mixin absoluteVertical {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+// 水平
+@mixin absoluteHorizontal {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+// 垂直置中-flex
+@mixin flexVertical {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// 網頁預設解析度和置中
+@mixin wrapCenter($width, $distant) {
+    max-width: $width;
+    margin: $distant auto;
+}
+
+// mobile rwd 整理
+// 置中
+@mixin mobileMerge($width, $top, $bottom) {
+    width: $width;
+    float: none;
+    margin: $top auto $bottom auto;
+}
+
+// 文字後方線條-垂直 用 偽元素
+@mixin partitionLine($width, $height, $right, $left) {
+    content: "";
+    border: $width solid;
+    display: inline-block;
+    height: $height;
+    margin: 0 $right 0 $left;
+}
+
+

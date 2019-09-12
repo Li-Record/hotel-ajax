@@ -1,0 +1,30 @@
+@mixin pad {
+    @media(max-width: 768px) {
+        @content
+    }
+}
+
+@mixin pad_below {
+    @media(max-width: 767px) {
+        @content
+    }
+}
+
+@mixin phone {
+    @media(max-width: 415px) {
+        @content
+    }
+}
+
+@mixin desktop_below {
+	@media(max-width: 959px) {
+		@content
+	}
+}
+
+// 背景圖片
+@mixin bannerBg {
+    @media(max-width: 600px) {
+        @content
+    }
+}

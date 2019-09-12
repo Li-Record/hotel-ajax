@@ -1,0 +1,19 @@
+header{
+    .bg-transparent{
+        background-color: transparent;
+    }
+    .bg-img{
+        background-image: url(../img/banner-3.jpg);
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+    .pos-center{
+        @include allcenter;
+    }
+    .text-shadow{
+        text-shadow: 3px 3px 5px #333;
+    }
+}

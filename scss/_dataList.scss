@@ -1,0 +1,19 @@
+.box-shadow{
+    box-shadow: 3px 3px 6px #777;
+    transition: all .3s;
+}
+.box-shadow:hover{
+    box-shadow: 5px 5px 6px #777;
+    cursor: pointer;
+}
+.icon{
+    width: 20px;
+}
+.text-wood{
+    color: #e5cd9d;
+}
+
+.h-card{
+    min-height: 250px;
+    line-height: 1.5;
+}

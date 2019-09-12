@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+
+    <title>新北民宿</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="jumbotron jumbotron-fluid bg-img mb-0 position-relative">
+          <div class="container pos-center">
+            <h1 class="display-4 text-center text-light text-shadow">
+              <span><i class="fas fa-hotel"></i></span>
+              新北民宿
+            </h1>
+            <small class="mt-3 d-block text-center text-light text-shadow">
+              選擇區域，查詢基本民宿資訊
+            </small>
+            <div class="form-group">
+              <select id="selectZone" class="form-control w-50 mx-auto mt-5">
+                <option value="" selected disabled
+                  >-- 選擇您要查詢的區域 --</option
+                >
+              </select>
+            </div>
+          </div>
+        </div>
+      </header>
+      <article class="container my-5">
+        <div class="row justify-content-end">
+            <div class="col-md-10">
+                <h3 id="zoneTitle" class="display-4 text-center w-100 mb-4">請選擇區域</h3>
+            </div>
+        </div>
+        <div class="row">
+          <aside class="col-md-2">
+            <form>
+              <div class="form-group">
+                <select id="asideSelectZone" class="form-control" id="exampleFormControlSelect1">
+                  <option value="" selected disabled>-- 請選擇區域 --</option>
+                </select>
+                <input id="searchZone" class="btn btn-secondary mt-3 btn-block" type="button" value="搜尋">
+              </div>
+            </form>
+          </aside>
+          <section class="col-md-10">
+            <div class="row" id="hotelList">
+            </div>
+          </section>
+        </div>
+      </article>
+      <footer class="bg-dark py-3 text-light  text-center">
+        <h5>Copyright © 2019 by Yi Ming Lee</h5>
+      </footer>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/892efcd286.js"></script>
+    <script src="js/all.js"></script>
+  </body>
+</html>
