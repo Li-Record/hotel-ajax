@@ -1,11 +1,12 @@
 const hotel = [];
 const xhrHotel = new XMLHttpRequest();
-xhrHotel.open('GET', 'http://localhost:3000/GET', true);
+// xhrHotel.open('GET', 'http://localhost:3000/GET', true);
+xhrHotel.open('GET', 'https://cors-anywhere.herokuapp.com/https://data.ntpc.gov.tw/od/data/api/73CB0172-C596-490B-B505-186DE74782D1?$format=json', true);
 xhrHotel.send(null);
 xhrHotel.onload = function () {
     if (xhrHotel.status >= 200 && xhrHotel.status < 400) {
-        const hotelAry = JSON.parse(xhrHotel.responseText);
-        const hotelData = hotelAry[0];
+        const hotelData = JSON.parse(xhrHotel.responseText);
+        // const hotelData = hotelAry[0];
         hotelData.forEach(function(value){
             hotel.push(value);
         })
